@@ -11,7 +11,17 @@ main{
 }
 .nav{
     width: 100%;
+    height: 50px;
+    padding: 0;
+    margin: 0;
+  
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      
 
+}
+.group-image{
+    width: 90%;
 }
 .data{
     display: flex;
@@ -20,6 +30,7 @@ main{
     justify-content: center;
     font-weight: 500;
     font-size:large;
+    padding: 20px;
     font-family: sans-serif;
 }
 .card--image {
@@ -65,6 +76,7 @@ main{
 
 .card-section{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     justify-content:space-around;
@@ -72,22 +84,81 @@ main{
 }
 
 /* Media Query for Mobile View */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
+.heading{
+    font-size: 100%;
+}
     .card {
       width: 100%;
     }
-  .group77{
-    width: 80%;
+  .header{
+    width: 95%;
+    padding: 20px;
   }
-    .card-section {
-        width: 100%;
+  .group-image{
+    width: 95%;
+  }
+ main{
+    width: 95%;
+ }
+    /* .card-section {
+        padding:3%;
+        width: 90%;
+        max-width: 425px;
       display: flex;
-      margin-left:32%;
-      flex-direction: column;
+      flex-direction:row;
       align-items: center;
-      justify-content: center;
+      justify-content:space-between;
+    } */
+
+    .card-section{
+        flex-direction:row;
+        align-items: center;
+        justify-content: center;
+     margin-left: auto;
+     margin-right: auto;
+     padding-left: 20%;
+        /* flex-wrap: wrap; */
     }
+   
+
     .card--image{
-        width:40%;
+        width:80%;
+        height: auto;
+        /* width: 175px; */
+    }
+  }
+/* Media Query for Mobile View */
+@media (min-width: 768px) and (max-width:1023px){
+.heading{
+    
+}
+    .card {
+      width: 100%;
+    }
+  .header{
+    width: 95%;
+    padding: 20px;
+  }
+  .group-image{
+    width: 95%;
+  }
+    /* .card-section {
+        padding:3%;
+        width: 90%;
+        max-width: 425px;
+      display: flex;
+      flex-direction:row;
+      align-items: center;
+      justify-content:space-between;
+    } */
+    .card-section {
+    flex-wrap: wrap;  
+    }
+   
+
+    .card--image{
+        /* width:40%; */
+        width: 175px;
     }
   }

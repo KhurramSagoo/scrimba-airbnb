@@ -24,10 +24,10 @@ function App() {
       <div className="nav">
         <img className='logo' src={Logo} alt="logo" />
       </div>
-      <div>
-        <img className='group77' src={Group77} alt="group77" />
+      <div className="header">
+        <img className='group-image' src={Group77} alt="group77" />
         <div className='data'>
-          <h1>Online Experiences</h1>
+          <h1 className="heading">Online Experiences</h1>
           <p>
             Join unique interactive activities led by one-of-a-kind hosts—all without leaving home.
           </p>
